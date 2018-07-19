@@ -16,7 +16,8 @@ module.exports = function routes(app, passport) {
     // Controllers
         indexController  = require('../controllers/indexController'),
         loginController  = require('../controllers/loginController'),
-        secureController = require('../controllers/secureController');
+        secureController = require('../controllers/secureController'),
+        goodsController = require('../controllers/goodsController');
 
     var router = new Router();
 
@@ -24,7 +25,9 @@ module.exports = function routes(app, passport) {
         .get('/',          indexController.index)
         .get('/users',     indexController.list)
         .get('/users/:id', indexController.getId)
-
+        .get('/goods/:is', goodsController.getGoodsById) /*200 - ok, 404 - !ok*/
+        .post('/goods',    goodsController.postGoods) /*201 - added, 400 - !added*/
+        .del('/goods/:id', goodsController.delGoodsById) /*204 - deleted, 400 - !deleted*/
         .get('/login',     loginController.login)
         .post('/login',
             passport.authenticate('local', {

@@ -1,10 +1,9 @@
 {
   "name": "myKoajsApp",
   "version": "2.0.0",
-  "description": "A simple Koajs v2 Application Skeleton",
+  "description": "A simple Koajs v2 Application",
   "author": {
-    "name": "Oleg Cherniy",
-    "email": "oleg.cherniy@gmail.com"
+    "name": "Kovel"
   },
   "directories": {
     "lib": "./app/controllers",
@@ -20,6 +19,7 @@
     "koa-passport": "^2.1.1",
     "koa-router": "^7.0.1",
     "koa-views": "^5.0.2",
+    "memcached": "^2.2.2",
     "passport-local": "*"
   },
   "devDependencies": {
