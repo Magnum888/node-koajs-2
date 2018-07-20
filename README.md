@@ -1,21 +1,15 @@
 node-koajs-skeleton
 ===================
 
-A simple [Koajs v2 Application Skeleton](https://github.com/ria-com/node-koajs-skeleton)
+A simple Koajs v2 Application
 
 quick start
 ===========
 
-**Checkout node-koajs-skeleton:**
-
-```sh
-$ git clone https://github.com/ria-com/node-koajs-skeleton
-```
-
 **Make your own new project:**
 
 ```sh
-$ mv node-koajs-skeleton my_new_project
+$ mv node-koajs my_new_project
 $ cd my_new_project
 $ rm -rf .git
 ```
