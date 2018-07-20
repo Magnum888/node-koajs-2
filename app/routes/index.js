@@ -16,7 +16,7 @@ module.exports = function routes(app, passport) {
     // Controllers
         indexController  = require('../controllers/indexController'),
         loginController  = require('../controllers/loginController'),
-        secureController = require('../controllers/secureController');
+        secureController = require('../controllers/secureController'),
         goodsController = require('../controllers/goodsController');
 
     var router = new Router();
